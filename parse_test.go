@@ -22,8 +22,9 @@ import (
 	"testing"
 )
 
-func ExampleParse() {
-	ua := Parse("Mozilla/5.0 (X11; Linux i686; rv:38.0) Gecko/20100101 Firefox/38.0")
+//func ExampleParse() {
+func TestParse(t *testing.T) {
+	ua := Parse("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/50.0.2661.102 Chrome/50.0.2661.102 Safari/537.36")
 	fmt.Print(ua)
 	// Output: Type: Browser
 	//Name: Firefox
